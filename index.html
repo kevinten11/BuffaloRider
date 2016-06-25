@@ -45,7 +45,7 @@
       float: left;
     }
     h1 {
-      margin-top: 100px;
+      margin-top: 0px;
       color: #000;
       margin-bottom: 5px;
       font-size: 70px;
@@ -110,7 +110,7 @@
     }
     
     .main h1 {
-      padding:150px 50px;
+      padding: 50px 10px;
       float: left;
       width: 100%;
       font-size: 45px;
@@ -124,22 +124,6 @@
    
     .main h1.demo1 {
       background: #1ABC9C;
-    }
-    
-    .reload.bell {
-      font-size: 12px;
-      padding: 20px;
-      width: 45px;
-      text-align: center;
-      height: 47px;
-      border-radius: 50px;
-      -webkit-border-radius: 50px;
-      -moz-border-radius: 50px;
-    }
-    
-    .reload.bell #notification {
-      font-size: 25px;
-      line-height: 140%;
     }
     
     .reload, .btn{
@@ -224,7 +208,7 @@
     }
     .main section .page_container {
       position: relative;
-      top: 25%;
+      top: 10%;
       margin: 0 auto 0;
       max-width: 950px;
       z-index: 3;
@@ -235,16 +219,18 @@
     
     .main section > img {
       position: absolute;
-      top: 0;
+      top: 50%;
       left: 0;
       max-width: 100%;
       z-index: 1;
+      transform: translate(0, -50%);
     }
     
     .main section.page1 {
       background:rgb(230, 217, 200);
     }
     .main section.page1 h1 {
+      margin-top: 15%;
       text-align: left;
       padding: 0;
       margin-bottom: 15px;
@@ -267,16 +253,29 @@
       text-align: center;
     }
     .main section.page2 {
-      background: #555557 url(back-phone.png) no-repeat center -150px ;
+      background: #555557 url(back-phone.png) no-repeat center 0px;
+      height: 100%;
     }
-    .main section.page2 > img {
+    .main section.page2 div.upper {
+
+    }
+    .main section.page2 div.lower {
+      position: relative;
+      text-align: left;
+    }
+    .main section.page2 img {
+      width: 20%;
+      height: auto;
+      margin-top: 50px;
+    }
+
+    div.lower a {
       position: absolute;
-      top: -300px;
-      left: 50%;
-      margin-left: -1095px;
+      top: 50%;
+      left: 80%;
     }
+
     .main section.page2 .page_container {
-      margin-top: 240px;
       overflow: hidden;
     }
     .main section.page2 h1 {
@@ -289,10 +288,14 @@
     }
     .main section.page2 h2 {
       color: rgba(255,255,255,0.85);
-      text-align: center;
       line-height: 160%;
       font-weight: 100;
+      width: 33%;
+      display: inline-block;
     }
+
+    
+
     .viewing-page-2 .back{
       background: rgba(0, 0, 0, 0.25);
       color: #FFF;
@@ -367,6 +370,8 @@
       margin-right: auto;
       right: 0;
     }
+
+
 	</style>
 	<script>
 	  $(document).ready(function(){
@@ -389,7 +394,7 @@
           <h2></h2>
           <div class="btns">
             <audio controls>
-              <source src="https://raw.githubusercontent.com/kevinten11/BuffaloRider/master/audio/TelepathyDemo.mp3" type="audio/wav">
+              <source src="https://raw.githubusercontent.com/kevinten11/BuffaloRider/master/audio/TelepathyDh1emo.mp3" type="audio/wav">
             </audio>
              <a class="reload btn" href="https://raw.githubusercontent.com/kevinten11/BuffaloRider/master/audio/TelepathyDemo.mp3" download>Download Demo</a>
   	        
@@ -400,9 +405,18 @@
 	    
 	    <section class="page2">
 	      <div class="page_container">
-          <h1>Stuff could go here</h1>
-          <h2></h2>
-	      </div>
+          <div class="upper" >
+            <h1>Help back the EP of original music that listeners have described as:</h1>
+            <h2>"Pleasantly Surprising!"</h2>
+            <h2>"Not bad!"</h2>
+            <h2>"Sure!"</h2>
+          </div>            
+          <div class="lower">
+            <img src="images/AlanSinging.jpg">
+            <a class="reload" href="https://www.kickstarter.com/projects/423309455/the-alan-murphy-ep">Kickstarter</a>
+          </div>
+        </div>
+        
       </section>
 	    
 	    <section class="page3">
