@@ -245,9 +245,7 @@
     }
 
     div.lower a {
-      position: absolute;
-      top: 50%;
-      left: 80%;
+      margin-left: 80%;
     }
 
     .main section.page2 .page_container {
@@ -274,8 +272,7 @@
     }
     .main section.page3 .page_container {
       overflow: hidden;
-      width: 500px;
-      right: -285px;
+      width: 100%;
     }
     .main section.page3 h1 {
       text-align: left;
@@ -292,6 +289,12 @@
       font-weight: 100;
       font-size: 21px;
     }
+    .main section.page3 table {
+      padding-top: 50px;
+      width: 100%;
+      padding-left: 25%;
+    }
+
     
     body.disabled-onepage-scroll .onepage-wrapper  section {
       min-height: 100%;
@@ -364,7 +367,7 @@
           <h2></h2>
           <div class="btns">
             <audio controls>
-              <source src="https://raw.githubusercontent.com/kevinten11/BuffaloRider/master/audio/TelepathyDemo.mp3" type="audio/wav">
+              <source src="https://raw.githubusercontent.com/kevinten11/BuffaloRider/master/audio/TelepathyDemo.mp3" type="audio/mp3">
             </audio>
              <a class="reload btn" href="https://raw.githubusercontent.com/kevinten11/BuffaloRider/master/audio/TelepathyDemo.mp3" download>Download Demo</a>
   	        
@@ -391,7 +394,20 @@
 	    
 	    <section class="page3">
 	      <div class="page_container">
-          <h1>And also here</h1>
+          <h1>More Songs...</h1>
+          <table>
+            <tr>
+              <td><h2>Madeline</h2></td>
+              <td>
+                <audio controls>
+                  <source src="https://raw.githubusercontent.com/kevinten11/BuffaloRider/master/audio/Madeline.wav" type="audio/wav">
+                </audio>
+              </td>
+              <td>
+                <a class="reload btn" href="https://raw.githubusercontent.com/kevinten11/BuffaloRider/master/audio/Madeline.wav" download>Download</a>
+              </td>
+            </tr>
+          </table>
   	    </div>
       </section>
     </div>
