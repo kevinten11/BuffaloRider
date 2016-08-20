@@ -4,7 +4,6 @@
 	<meta charset="utf-8">
 	<title>Buffalo Rider</title>
 	<meta name="title" content="Buffalo Rider" />
-	<link rel="image_src" href="/images/notify_better_image.png" />
 
 	<meta name="author" content="Pete R., Kevin R">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
@@ -251,7 +250,7 @@
       text-align: center;
     }
     .main section.page2 {
-      background: #555557 url(back-phone.png) no-repeat center 0px;
+      background: #555557 no-repeat center 0px;
       height: 100%;
     }
     .main section.page2 div.upper {
@@ -292,7 +291,7 @@
     }
 
     .main section.page3 {
-      background:url(tilted-phone.png) no-repeat 156px -150px ;
+      background: no-repeat 156px -150px ;
     }
     .main section.page3 .page_container {
       overflow: hidden;
@@ -384,13 +383,12 @@
 <body>
   <div class="wrapper">
 	  <div class="main">
-	    
       <section class="page1">
         <div class="page_container">
           <h1>Buffalo Rider</h1>
           <h2></h2>
           <div class="btns">
-            <audio controls>
+            <audio controls autoplay id="Page1Telepathy">
               <source src="https://raw.githubusercontent.com/kevinten11/BuffaloRider/master/audio/Telepathy.mp3" type="audio/mp3">
             </audio>
              <a class="reload btn" href="https://raw.githubusercontent.com/kevinten11/BuffaloRider/master/audio/Telepathy.mp3" download>Download Telepathy</a>
@@ -414,10 +412,14 @@
               <td width="33%">
                 <table>
                   <tr>
-                    <a class="btn" href="https://www.facebook.com/thealanmurphy/?fref=ts">Facebook</a>
+                    <td style = "padding-bottom:20px">
+                      <a class="btn" href="https://www.facebook.com/thealanmurphy/?fref=ts">Facebook</a>
+                    </td>
                   </tr>
                   <tr>
-                    <a class="btn" href="https://buffaloriderband.bandcamp.com/releases">Bandcamp</a>
+                    <td>
+                      <a class="btn" href="https://buffaloriderband.bandcamp.com/releases">Bandcamp</a>
+                    </td>
                   </tr>
                 </table>
               </td>
