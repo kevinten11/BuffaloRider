@@ -370,13 +370,17 @@
 	</style>
 	<script>
 	  $(document).ready(function(){
+      function removeContextMenu(audio) {
+          $(audio).bind('contextmenu',function() { return false; });
+      }
+      var audList = document.querySelectorAll("audio");
+      audList.forEach(removeContextMenu)
       $(".main").onepage_scroll({
         sectionContainer: "section",
         responsiveFallback: 600,
         loop: true
       });
-		});
-		
+		});	
 	</script>
   <link rel="shortcut icon" type="image/x-icon" href="images/buffalo-icon.jpg" />
 </head>
@@ -391,8 +395,7 @@
             <audio controls autoplay id="Page1Telepathy">
               <source src="https://raw.githubusercontent.com/kevinten11/BuffaloRider/master/audio/Telepathy.mp3" type="audio/mp3">
             </audio>
-             <a class="reload btn" href="https://raw.githubusercontent.com/kevinten11/BuffaloRider/master/audio/Telepathy.mp3" download>Download Telepathy</a>
-  	        
+             <!-- <a class="reload btn" href="https://raw.githubusercontent.com/kevinten11/BuffaloRider/master/audio/Telepathy.mp3" download>Download Telepathy</a> -->	        
   	      </div>
   	    </div>
   	    <img src="https://raw.githubusercontent.com/kevinten11/BuffaloRider/master/images/American_bison.jpg">
@@ -442,7 +445,7 @@
                 </audio>
               </td>
               <td>
-                <a class="reload btn2" href="https://raw.githubusercontent.com/kevinten11/BuffaloRider/master/audio/Madeline.mp3" download>Download</a>
+                <!-- <a class="reload btn2" href="https://raw.githubusercontent.com/kevinten11/BuffaloRider/master/audio/Madeline.mp3" download>Download</a> -->
               </td>
             </tr>
             <tr>
@@ -453,7 +456,7 @@
                 </audio>
               </td>
               <td>
-                <a class="reload btn2" href="https://raw.githubusercontent.com/kevinten11/BuffaloRider/master/audio/Song%20For%20No%20One.mp3" download>Download</a>
+                <!-- <a class="reload btn2" href="https://raw.githubusercontent.com/kevinten11/BuffaloRider/master/audio/Song%20For%20No%20One.mp3" download>Download</a> -->
               </td>
             </tr>
             <tr>
@@ -464,7 +467,7 @@
                 </audio>
               </td>
               <td>
-                <a class="reload btn2" href="https://raw.githubusercontent.com/kevinten11/BuffaloRider/master/audio/Telepathy.mp3" download>Download</a>
+                <!-- <a class="reload btn2" href="https://raw.githubusercontent.com/kevinten11/BuffaloRider/master/audio/Telepathy.mp3" download>Download</a> -->
               </td>
             </tr>
             <tr>
@@ -475,7 +478,7 @@
                 </audio>
               </td>
               <td>
-                <a class="reload btn2" href="https://raw.githubusercontent.com/kevinten11/BuffaloRider/master/audio/Dreams.mp3" download>Download</a>
+                <!-- <a class="reload btn2" href="https://raw.githubusercontent.com/kevinten11/BuffaloRider/master/audio/Dreams.mp3" download>Download</a> -->
               </td>
             </tr>
             <tr>
@@ -486,7 +489,7 @@
                 </audio>
               </td>
               <td>
-                <a class="reload btn2" href="https://raw.githubusercontent.com/kevinten11/BuffaloRider/master/audio/Wait%20Wait%20Stop.mp3" download>Download</a>
+                <!-- <a class="reload btn2" href="https://raw.githubusercontent.com/kevinten11/BuffaloRider/master/audio/Wait%20Wait%20Stop.mp3" download>Download</a> -->
               </td>
             </tr>
           </table>
